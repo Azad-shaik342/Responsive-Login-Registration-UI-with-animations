@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive UI and Frontend Development Task 2">
+  <title>ApexUI | Interactive Frontend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">A</span> ApexUI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="btn btn-light btn-sm px-3" href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero-section">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow">TASK 2 · DAYS 13–24</span>
+          <h1 class="display-4 fw-800 mt-3">Interactive UI that feels <span class="text-accent">effortless.</span></h1>
+          <p class="lead text-secondary mt-4">A responsive Login & Registration experience built with Bootstrap 5, custom CSS, JavaScript validation, animations, and AJAX.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-primary btn-lg" href="register.html">Create account <i class="bi bi-arrow-right ms-1"></i></a>
+            <a class="btn btn-outline-dark btn-lg" href="login.html">Sign in</a>
+          </div>
+          <div class="d-flex flex-wrap gap-4 mt-4 small text-secondary">
+            <span><i class="bi bi-check-circle-fill text-accent me-1"></i> Bootstrap 5</span>
+            <span><i class="bi bi-check-circle-fill text-accent me-1"></i> Vanilla JS</span>
+            <span><i class="bi bi-check-circle-fill text-accent me-1"></i> AJAX/PHP</span>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div id="heroCarousel" class="carousel slide showcase-card shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-4 overflow-hidden">
+              <div class="carousel-item active">
+                <div class="carousel-panel panel-one">
+                  <div class="mock-window">
+                    <div class="mock-top"><span></span><span></span><span></span></div>
+                    <div class="mock-body">
+                      <div class="avatar"><i class="bi bi-person"></i></div>
+                      <div class="mock-line wide"></div><div class="mock-line"></div>
+                      <div class="mock-button"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-panel panel-two">
+                  <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                  <h3>Smart validation</h3>
+                  <p>Clear feedback keeps every form interaction simple.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-panel panel-three">
+                  <div class="feature-icon"><i class="bi bi-lightning-charge"></i></div>
+                  <h3>AJAX ready</h3>
+                  <p>Check username and email availability without reloading.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide"><span class="carousel-control-next-icon"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-light" id="features">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="eyebrow">BUILT FOR THE ASSIGNMENT</span>
+        <h2 class="section-title mt-2">Everything works together</h2>
+        <p class="text-secondary mx-auto max-copy">A complete demonstration of Bootstrap components, responsive utilities, JavaScript form handling, and asynchronous PHP communication.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="feature-card h-100"><div class="icon-box"><i class="bi bi-grid-3x3-gap"></i></div><h3>Bootstrap 5</h3><p>Grid, navbar, carousel, cards, modal, buttons and utilities.</p></div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="feature-card h-100"><div class="icon-box"><i class="bi bi-check2-circle"></i></div><h3>Validation</h3><p>Client-side checks with clear, accessible feedback.</p></div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="feature-card h-100"><div class="icon-box"><i class="bi bi-eye"></i></div><h3>Password Toggle</h3><p>Show or hide passwords on login and registration forms.</p></div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="feature-card h-100"><div class="icon-box"><i class="bi bi-arrow-repeat"></i></div><h3>AJAX</h3><p>Username and email checks happen without a page reload.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 reveal">
+          <span class="eyebrow">TRY THE INTERACTION</span>
+          <h2 class="section-title mt-2">Forgot your password?</h2>
+          <p class="text-secondary">Open the Bootstrap modal and experience a real interactive component.</p>
+          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#forgotModal">Open Forgot Password <i class="bi bi-envelope ms-1"></i></button>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="info-card">
+            <div class="d-flex align-items-center gap-3"><div class="icon-box"><i class="bi bi-phone"></i></div><div><h4 class="mb-1">Mobile-first</h4><p class="mb-0 text-secondary">Responsive utilities and layouts.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container py-4 d-flex flex-column flex-md-row justify-content-between gap-3">
+    <span>© 2026 ApexUI. Task 2 submission project.</span>
+    <div class="d-flex gap-3"><a href="about.html">Features</a><a href="login.html">Login</a><a href="register.html">Register</a><a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a></div>
+  </div>
+</footer>
+
+<div class="modal fade" id="forgotModal" tabindex="-1" aria-labelledby="forgotModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4">
+      <div class="modal-header"><h5 class="modal-title" id="forgotModalLabel">Reset your password</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body">
+        <p class="text-secondary">Enter your email and we'll simulate sending a reset link.</p>
+        <form id="forgotForm" novalidate>
+          <label for="forgotEmail" class="form-label">Email address</label>
+          <input id="forgotEmail" type="email" class="form-control" required>
+          <div id="forgotMessage" class="form-text mt-2"></div>
+          <button class="btn btn-primary w-100 mt-3" type="submit">Send reset link</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
